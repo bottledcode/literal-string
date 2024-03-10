@@ -1,0 +1,14 @@
+<?php
+
+it('is equal to itself', function () {
+    expect(LiteralString::from("value"))->toBe(LiteralString::from("value"));
+});
+
+it('handles a < b', function () {
+    expect(LiteralString::from('a') < LiteralString::from('b'))->toBeTrue()
+        ->and(LiteralString::from('b') > LiteralString::from('a'))->toBeTrue();
+});
+
+it('handles concatenation', function () {
+    expect(LiteralString::from('a') . 'b')->toBe('ab');
+});

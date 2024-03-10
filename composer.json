@@ -1,0 +1,24 @@
+{
+    "name": "withinboredom/literal-string",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/LiteralString.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Robert Landers",
+            "email": "landers.robert@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
