@@ -10,5 +10,6 @@ it('handles a < b', function () {
 });
 
 it('handles concatenation', function () {
-    expect(LiteralString::from('a') . 'b')->toBe('ab');
+    expect(LiteralString::from('a') . 'b')->toBe('ab')
+        ->and(LiteralString::from("A") . LiteralString::from("B"))->toBe('AB');
 });
